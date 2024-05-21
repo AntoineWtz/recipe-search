@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# Recipe Search
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An intuitive Recipe Search application built with React, TypeScript, and Tailwind CSS, utilizing the Edamam API.
 
-## Available Scripts
+## Usage
 
-In the project directory, you can run:
+1. Clone this repository.
+2. Run `npm install` to install dependencies.
+3. Create a `.env` file in the root directory and add your Edamam API credentials:
+    `REACT_APP_EDAMAM_APP_ID=your_app_id`
+    `REACT_APP_EDAMAM_APP_KEY=your_app_key`
 
-### `npm start`
+4. Run `npm start` to start the development server.
+5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Description
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The Recipe Search app allows users to search for recipes by ingredient. It fetches data from the Edamam API and displays the results.
 
-### `npm test`
+### Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Search for recipes by ingredient.
+* View recipe details and links to full recipes.
 
-### `npm run build`
+## File Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* `src/components/SearchBar.tsx`: Search bar component for user input.
+* `src/components/RecipeList.tsx`: Component to display the list of recipes.
+* `src/components/RecipeCard.tsx`: Component to display individual recipe details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React
+* TypeScript
+* Tailwind CSS
+* Edamam API
 
-### `npm run eject`
+## Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[DemoLink](https://antoinewtz.github.io/recipe-search/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
