@@ -12,17 +12,17 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     };
 
     return (
-        <div className="mb-4">
+        <div className="mb-8 text-center">
             <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
+                className="p-2 border border-gray-300 rounded-md"
                 placeholder="Search for recipes..."
-                className="p-2 border border-gray-300 rounded-md w-1/3 mx-auto block"
             />
             <button
                 onClick={handleSearch}
-                className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md mx-auto block hover:bg-blue-800"
+                className="ml-2 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
             >
                 Search
             </button>
