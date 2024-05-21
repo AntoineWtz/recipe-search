@@ -26,6 +26,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-4">
       <h1 className="text-4xl font-bold text-center mb-8">Recipe Search</h1>
+      <p className="text-center mb-8">Find recipes for your favorite foods</p>
       <SearchBar onSearch={fetchRecipes} />
       <RecipeList recipes={recipes} />
     </div>
