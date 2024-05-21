@@ -7,7 +7,7 @@ const App: React.FC = () => {
 
   const fetchRecipes = async (query: string) => {
     const appId = 'eec6bf53';
-    const appKey = 'Yb6283cf46aa623264d25addb9598206d';
+    const appKey = 'ca0c5ea482f317dfc748846fa27cd36e';
     try {
       const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${appId}&app_key=${appKey}`);
       const data = await response.json();
