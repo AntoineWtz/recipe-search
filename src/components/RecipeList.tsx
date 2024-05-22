@@ -8,6 +8,7 @@ interface RecipeListProps {
         url: string;
         ingredients: { text: string }[];
         source: string;
+        cuisineType?: string[];
     }[];
 }
 

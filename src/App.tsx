@@ -9,7 +9,7 @@ const App: React.FC = () => {
     const appId = 'eec6bf53';
     const appKey = 'ca0c5ea482f317dfc748846fa27cd36e';
     try {
-      const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${appId}&app_key=${appKey}`);
+      const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${appId}&app_key=${appKey}&to=20`);
       const data = await response.json();
       console.log('API Response:', data);
 
@@ -19,7 +19,8 @@ const App: React.FC = () => {
           image: hit.recipe.image,
           url: hit.recipe.url,
           ingredients: hit.recipe.ingredients,
-          source: hit.recipe.source
+          source: hit.recipe.source,
+          cuisineType: hit.recipe.cuisineType
         })));
       } else {
         console.error('Unexpected response format:', data);
@@ -37,8 +38,6 @@ const App: React.FC = () => {
       <RecipeList recipes={recipes} />
     </div>
   );
-
-
 };
 
 export default App;
