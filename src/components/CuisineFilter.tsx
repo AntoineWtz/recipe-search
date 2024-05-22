@@ -10,7 +10,7 @@ const CuisineFilter: React.FC<CuisineFilterProps> = ({ setCuisineType }) => {
     };
 
     return (
-        <div className="mb-8 text-center">
+        <div className="flex items-center">
             <select
                 onChange={handleCuisineChange}
                 className="p-2 border border-gray-300 rounded-md"

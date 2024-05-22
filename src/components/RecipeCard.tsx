@@ -21,11 +21,11 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
                 {recipe.cuisineType && (
                     <p className="text-gray-500 text-center mb-4">Cuisine: {recipe.cuisineType.join(', ')}</p>
                 )}
-                <div className="mt-4">
+                <div className="mt-4 h-34 overflow-y-auto">
                     <h2 className="font-bold text-lg text-center">Ingredients:</h2>
                     <ul className="list-disc list-inside">
                         {recipe.ingredients.slice(0, 5).map((ingredient, index) => (
-                            <li key={index}>{ingredient.text}</li>
+                            <li key={index} className='truncate'>{ingredient.text}</li>
                         ))}
                     </ul>
                 </div>

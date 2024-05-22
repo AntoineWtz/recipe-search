@@ -12,7 +12,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     };
 
     return (
-        <div className="mb-8 text-center">
+        <div className="flex items-center">
             <input
                 type="text"
                 value={query}
