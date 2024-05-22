@@ -13,7 +13,7 @@ const CuisineFilter: React.FC<CuisineFilterProps> = ({ setCuisineType }) => {
         <div className="flex items-center">
             <select
                 onChange={handleCuisineChange}
-                className="p-2 border border-gray-300 rounded-md"
+                className="p-2 border border-gray-300 rounded-md mr-2"
             >
                 <option value="">All Cuisines</option>
                 <option value="American">American</option>
