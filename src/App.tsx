@@ -63,7 +63,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-purple-100 to-pink-100 p-4">
       <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Recipe Search</h1>
-      <p className="text-center text-gray-700 mb-4">Find recipes for your favorite dishes!</p>
+      <p className="text-center text-gray-700 mb-4">Add a country (or not), add an ingredient (or not), to find inspiration.</p>
       <div className="flex justify-center items-center mb-8 space-x-4">
         <CuisineFilter setCuisineType={setCuisineType} />
         <SearchBar onSearch={handleSearch} />
