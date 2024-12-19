@@ -16,13 +16,13 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
         <div className="max-w-xs w-full rounded-lg overflow-hidden shadow-lg bg-white m-4 p-4 flex flex-col">
             <img className="w-full h-48 object-cover rounded" src={recipe.image} alt={recipe.label} />
             <div className="flex-1 p-4">
-                <div className="font-bold text-xl text-center mb-2">{recipe.label}</div>
-                <p className="text-gray-700 text-center mb-2">Source: {recipe.source}</p>
+                <div className="font-bold text-xl text-left mb-2">{recipe.label}</div>
+                <p className="text-gray-700 text-left mb-2">Source : {recipe.source}</p>
                 {recipe.cuisineType && (
-                    <p className="text-gray-500 text-center mb-4">Cuisine: {recipe.cuisineType.join(', ')}</p>
+                    <p className="text-gray-500 text-left mb-4">Cuisine : {recipe.cuisineType.join(', ')}</p>
                 )}
                 <div className="mt-4 h-34 overflow-y-auto">
-                    <h2 className="font-bold text-lg text-center">Ingredients:</h2>
+                    <h2 className="font-bold text-lg text-center">Ingredients :</h2>
                     <ul className="list-disc list-inside">
                         {recipe.ingredients.slice(0, 5).map((ingredient, index) => (
                             <li key={index} className='truncate'>{ingredient.text}</li>
